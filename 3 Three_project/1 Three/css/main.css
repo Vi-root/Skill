@@ -1,0 +1,299 @@
+ /* Общие стили */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     font-family: "Nunito Sans", sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 1.6;
+     background-color: #23443D;
+     max-width: 1440px;
+     margin: 0 auto;
+ }
+
+ /* font-family: "Rubik", sans-serif; */
+ /**/
+
+ .container {
+     width: 100%;
+     max-width: 800px;
+     margin: 0 auto;
+ }
+
+ .flex {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .text {
+     margin-top: 32px;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.6;
+     color: #E9ECEC;
+ }
+
+
+
+ .title {
+     font-family: "Rubik", sans-serif;
+     font-weight: 500;
+     font-size: 28px;
+     color: #E9ECEC;
+     line-height: 1.14;
+     text-align: center;
+ }
+
+ .title-h2 {
+     font-family: "Rubik", sans-serif;
+     font-weight: 500;
+     font-size: 18px;
+     color: #E9ECEC;
+     line-height: 1.4;
+     text-align: center;
+ }
+
+
+ .one-title {
+     font-family: "Rubik", sans-serif;
+     font-weight: 500;
+     line-height: 1.25;
+     font-size: 32px;
+     color: #E9ECEC;
+ }
+
+ .list {
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+     color: #E9ECEC;
+
+ }
+
+ /* ________________________________________________________ */
+ /* header */
+
+ header {
+     border-bottom: solid 2px rgba(255, 255, 255, 10%);
+ }
+
+ .wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 6px 0 8px 0;
+ }
+
+ .header_logo-link {}
+
+ .logo {}
+
+ .header_navigation {
+     display: flex;
+     gap: 48px;
+ }
+
+ .header_nav-link {
+     text-decoration: none;
+     color: #E9ECEC;
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 1.5;
+     font-family: "Nunito Sans", sans-serif;
+ }
+
+ .header_link-write {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     background-color: #64B48B;
+     padding: 12px 24px;
+     border-radius: 60px;
+ }
+
+ /* main */
+ main {}
+
+ .breadcrumbs {
+     padding: 20px 0 24px 0;
+ }
+
+ .breadcrumbs__list {
+     display: flex;
+     gap: 8px;
+     color: #64B48B;
+ }
+
+ .breadcrumbs__item {
+     list-style: none;
+ }
+
+ .breadcrumbs__link {
+     color: #64B48B;
+     text-decoration: none;
+     list-style: none;
+     font-size: 13px;
+     font-weight: 400;
+     line-height: 1.2;
+ }
+
+ /* clinick */
+ .clinick {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .clinick__img {
+     margin-top: 32px;
+ }
+
+ /* number-one */
+ .number-one {
+     margin-top: 60px;
+ }
+
+
+
+ .number-one__figure {
+     margin-top: 32px;
+ }
+
+ .number-one__img {
+     border-radius: 20px;
+ }
+
+ .number-one__figcaption {
+     margin-top: 12px;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1.2;
+     color: rgba(255, 255, 255, 50%);
+     text-align: right;
+ }
+
+
+
+ .number-one__signature {
+     margin-top: 20px;
+     font-weight: 400;
+     font-size: 16;
+     line-height: 1.6;
+     color: #E9ECEC;
+ }
+
+ .nomber-one__blockquote {
+     background-image: linear-gradient(90deg, #1BA084 0%, #1DA63B 100%);
+     border-radius: 12px;
+     padding: 28px 60px;
+     font-weight: 400;
+     font-size: 15px;
+     color: #FFF;
+     line-height: 1.4;
+     margin-top: 20px;
+ }
+
+ /* service */
+ .service {
+     margin-top: 60px;
+ }
+
+ .quote {
+     color: #64B48B;
+ }
+
+ /* up-level */
+ .up-level {
+     display: flex;
+     flex-direction: column;
+     margin-top: 32px;
+ }
+
+ .up-level__title {
+     margin-bottom: 12px;
+ }
+
+ .list-item {}
+
+ .up-level__underlining {
+     color: #64B48B;
+ }
+
+
+
+
+
+
+ /* search */
+ .search {
+     margin-top: 60px;
+ }
+
+ .search__title {}
+
+ .search__text {
+     margin-top: 20px;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 1.4;
+     color: #E9ECEC;
+ }
+
+
+
+/* table */
+
+ /* Игнорируем промежуточные служебные теги для сетки */
+.search__table thead,
+.search__table tbody,
+.search__table tr {
+    display: contents; 
+}
+  /* Превращаем саму таблицу в Grid-контейнер */
+.search__table {
+        margin-top: 20px;
+    display: grid;
+    /* Задаем ровно 3 колонки. 
+       например: 1 часть (1fr), 2 части (2fr), 1.5 части (1.5fr) */
+    grid-template-columns: 1fr 2fr 1.5fr; 
+    width: 100%;
+}
+
+ .search__thead {
+     background-color: #E9ECEC;
+
+ }
+
+ .search__line {
+    text-align: left;
+ }
+
+
+.search__column-th{
+        font-weight: bold;
+    background-color: #eee;
+    padding: 16px 0 16px 20px;
+    color: #23443D;
+}
+
+.search__column-th,
+.search__column {
+    border-bottom: 1px solid #4B6C66;
+}
+
+
+ .search__column {
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 20px;
+ }
+
+
+.search__text-bold{
+    font-weight: 700;
+}
