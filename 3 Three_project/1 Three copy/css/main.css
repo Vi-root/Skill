@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+  background-color: #23443d;
+  min-width: 1260px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header {
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  background-color: #23443d;
+  padding: 4.5px 0 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__content {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 193px 1fr 193px;
+}
+
+.header__logo-link {
+  display: flex;
+}
+
+.header__logo {
+  height: 60px;
+  width: 120px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.header__item:not(:last-child) {
+  margin: 0 48px 0 0;
+}
+
+.header__link {
+  color: #e9ecec;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.header__signup {
+  color: #23443d;
+  background-color: #64b48b;
+  border-radius: 60px;
+  padding: 12px 24px 12px 24px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.breadcrumbs {
+  padding: 15px 0 0;
+  margin: 0 0 24px 0;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  margin: 0 20px 0 0;
+  margin: 0;
+}
+
+.breadcrumbs__link {
+  font-size: 13px;
+  line-height: 16px;
+  color: #64b48b;
+  font-weight: 500;
+  position: relative;
+  position: static;
+  text-decoration: none;
+}
+
+.breadcrumbs__link:not(span) {
+  color: #64b48b;
+}
+
+.breadcrumbs__link:not(span)::after {
+  content: "/";
+  color: #64b48b;
+  position: absolute;
+  position: static;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -12px;
+  margin: 0 8px;
+}
+
+.text-block {
+  padding: 0 0 80px;
+}
+
+.text-block * {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-block img {
+  width: 1020px;
+  height: 420px;
+  max-width: 1020px;
+  margin: 0 auto 60px;
+  border-radius: 20px;
+}
+
+.text-block figure {
+  margin: 0 auto 32px;
+}
+
+.text-block figure img {
+  width: 800px;
+  height: 400px;
+  max-width: 800px;
+  margin: 0 0 12px;
+}
+
+.text-block h1 {
+  margin: 0 auto 32px;
+}
+
+.text-block h2 {
+  margin: 60px auto 20px;
+}
+
+.text-block h3 {
+  margin: 0 auto 12px;
+}
+
+.text-block p {
+  margin: 0 auto 20px;
+}
+
+.text-block ol {
+  margin: 0 auto 20px;
+  padding: 0 0 0 24px;
+}
+
+.text-block ol li {
+  margin: 0 auto 20px;
+}
+
+.text-block ul {
+  margin: 0 auto 20px;
+  padding: 0 0 0 15px;
+}
+
+.text-block ul li:not(:last-child) {
+  margin: 0 auto 12px;
+}
+
+.footer {
+  background-color: #212121;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+}
+
+.footer__content {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 170px 1fr 170px;
+  padding: 24px 0;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact-name {
+  color: #7E818D;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 0 0 4px 0;
+}
+
+.footer__contact-phone {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo-link {
+  display: flex;
+}
+
+.footer__logo {
+  height: 60px;
+  width: 120px;
+}
+
+.footer__social {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social-link {
+  align-items: center;
+  background-color: #ffffff;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  width: 48px;
+}
